@@ -16,9 +16,9 @@ services:
     volumes:
       - $PWD/.postgres-data:/var/lib/postgresql/data
     environment:
-      POSTGRES_PASSWORD: itreallytiedtheroomtogether
-      POSTGRES_USER: localdev
-      POSTGRES_DB: stonks
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: user_name
+      POSTGRES_DB: db_name
     networks:
       - stonknet
   app:
